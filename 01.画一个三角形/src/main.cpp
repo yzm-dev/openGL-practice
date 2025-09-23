@@ -82,10 +82,6 @@ int main(void)
 		return -1;
 	}
 
-    // Set the initial viewport to the current framebuffer size (compatible with high DPI)
-    int fbWidth = 0, fbHeight = 0;
-    glfwGetFramebufferSize(window, &fbWidth, &fbHeight);
-    glViewport(0, 0, fbWidth, fbHeight);
     // Register a framebuffer size change callback to update the viewport when the window is resized
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
